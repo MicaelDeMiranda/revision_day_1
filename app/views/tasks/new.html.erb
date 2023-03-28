@@ -1,0 +1,9 @@
+<h1><%= "Create a new task" %></h1>
+
+<%= simple_form_for @task do |f| %>
+  <%= f.input :title, placeholder: 'title' %>
+  <%= f.input :details, placeholder: 'details' %>
+  <%= f.submit class: 'btn btn-flat' %>
+<% end %>
+
+<%= link_to "Back to the list", tasks_path %>
